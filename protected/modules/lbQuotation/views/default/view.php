@@ -96,14 +96,17 @@ if($countInv>0)
     var quotation_status = '<?php echo $quotation_status; ?>';
     var quotaiton_status_accepted =false;
     var quotation_status_draft = false;
-    if(quotation_status=='<?php echo LbQuotation::LB_QUOTATION_STATUS_CODE_ACCEPTED ?>')
-    {
-        quotaiton_status_accepted = true;
+    function update_quotation_status(){
+       if(quotation_status=='<?php echo LbQuotation::LB_QUOTATION_STATUS_CODE_ACCEPTED ?>')
+            {
+                quotaiton_status_accepted = true;
+            }
+            if(quotation_status=='<?php echo LbQuotation::LB_QUOTATION_STATUS_CODE_DRAFT ?>')
+            {
+                quotation_status_draft = true;
+            } 
     }
-    if(quotation_status=='<?php echo LbQuotation::LB_QUOTATION_STATUS_CODE_DRAFT ?>')
-    {
-        quotation_status_draft = true;
-    }
+    update_quotation_status();
     function onclickFromEmailQuotation(quotation_id)
     {
         lbAppUILoadModal(quotation_id,'Send Email','<?php

@@ -86,6 +86,10 @@ $this->widget('editable.EditableField', array(
                                 onChangeCurrencyDropdown(e,'.$model->lb_record_primary_key.');
                             });
                         }',
+                        'success' => 'js: function(e, editable) {
+                                quotation_status = (window.selected_quotation_status);
+                                update_quotation_status();
+                            }'
  ));
 echo '</div>';
 //echo '<label class="lb_badge_status_left">' . LbQuotation::model()->getBadgeStatusView($model->lb_quotation_status) . '</label>';
@@ -331,7 +335,7 @@ $this->endWidget();
      function onChangeCurrencyDropdown(e, quotation_id)
     {
         var target = e.target;
-        //console.log($(target).val());
+        window.selected_quotation_status = ($(target).val());
         if ($(target).val() == -1)
         {
             lbAppUILoadModal(quotation_id, 'New Currency','<?php
