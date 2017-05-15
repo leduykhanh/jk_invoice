@@ -40,8 +40,16 @@ if (isset($_REQUEST['search_date_to']) && $_REQUEST['search_date_to'] != "")
             {
                 $logo = "<img src='".$path.$file."' style='height:80' />";
             $html_logo = '
-            <tr>
-                <td colspan="2" align="center">'.$logo.'</td>
+            <tr width="100%" style="width:100%;" ><td colspan="2" align="left"><strong style="font-size:20px;">QE SAFETY CONSULTANCY PTE LTD</strong></td></tr>
+            <tr style="width:100%;" >
+                <td  align="left">1 Yishun Industrial Street 1 <br />                         
+                                #07-22 A Posh Bizhub       <br />                     
+                                Singapore 768160           <br />                 
+                                Tel:  (65) 66943200        <br />                 
+                                Email: Julius@qesafety.com  <br />                        
+                                UEN: 201422488N              <br />           
+                                </td>
+                <td  align="right">'.$logo.'</td>
             </tr>
                 ';
             }
@@ -70,10 +78,12 @@ if(isset($model->ownerAddress->lb_customer_address_line_1) || isset($model->owne
     $add = 'Address: ';
 //echo $html_logo;
 $a = '<table border="0" style="width:100%;margin-left:10px;" cellpadding="0" cellspacing="0">
-    <tr><td>
-        <table border="0" style="margin:auto;width:100%;" cellpadding="0" cellspacing="0">
-        ' . $html_logo . '
-    </table></td></tr>
+    <tr width="100%"><td  bgcolor="red" colspan="10">
+            <table width="100%" border="solid 1px" style="width:100%;" >
+                ' . $html_logo . '
+            </table>
+        </td>
+    </tr>
     <tr><td>
     <table border="0" style="width:98%;" cellpadding="0" cellspacing="0">
         <tr valign="top">
