@@ -38,6 +38,7 @@ if (isset($_REQUEST['search_date_to']) && $_REQUEST['search_date_to'] != "")
             }
             if(count($file_arr)>0)
             {
+                $logo = "<img src='".$path.$file."' style='height:80' />";
             $html_logo = '
             <tr>
                 <td colspan="2" align="center">'.$logo.'</td>
