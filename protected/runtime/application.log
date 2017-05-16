@@ -12134,3 +12134,49 @@ REQUEST_URI=/linxbooks/linxbooks/index.php/lbPayment/default/pdf?invoice=2&searc
 in D:\le\xampp\htdocs\linxbooks\linxbooks\protected\vendor\html2pdf\html2pdf.class.php (2133)
 in D:\le\xampp\htdocs\linxbooks\linxbooks\protected\vendor\html2pdf\html2pdf.class.php (4948)
 in D:\le\xampp\htdocs\linxbooks\linxbooks\protected\vendor\html2pdf\html2pdf.class.php (1255)
+2017/05/16 08:08:49 [error] [php] Undefined offset: 0 (D:\le\xampp\htdocs\linxbooks\linxbooks\protected\modules\lbInvoice\models\LbNextId.php:130)
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CBaseController.php(95): ConfigurationController->renderInternal()
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CController.php(869): ConfigurationController->renderFile()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\protected\views\configuration\index.php(25): ConfigurationController->renderPartial()
+#3 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CBaseController.php(126): require()
+#4 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CBaseController.php(95): ConfigurationController->renderInternal()
+#5 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CController.php(869): ConfigurationController->renderFile()
+#6 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CController.php(782): ConfigurationController->renderPartial()
+#7 D:\le\xampp\htdocs\linxbooks\linxbooks\protected\components\LBApplication.php(232): ConfigurationController->render()
+#8 D:\le\xampp\htdocs\linxbooks\linxbooks\protected\controllers\ConfigurationController.php(77): render()
+#9 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\actions\CInlineAction.php(49): ConfigurationController->actionIndex()
+#10 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\filters\CFilterChain.php(133): ConfigurationController->runAction()
+#12 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\filters\CInlineFilter.php(58): ConfigurationController->filterAccessControl()
+#15 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CController.php(265): ConfigurationController->runActionWithFilters()
+#18 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(282): ConfigurationController->run()
+#19 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CWebApplication->run()
+REQUEST_URI=/linxbooks/linxbooks/index.php/9/configuration
+in D:\le\xampp\htdocs\linxbooks\linxbooks\protected\modules\lbInvoice\models\LbNextId.php (130)
+in D:\le\xampp\htdocs\linxbooks\linxbooks\protected\views\configuration\_form_invoice_number.php (7)
+in D:\le\xampp\htdocs\linxbooks\linxbooks\protected\views\configuration\index.php (25)
+2017/05/16 08:10:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3fed79e7/js/jalali.js".' in D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/3fed79e7...')
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js?_=1494915018171
+HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/lbReport/default/index?tab=payment_report
+---
+2017/05/16 08:10:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3fed79e7/js/jalali.js".' in D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/3fed79e7...')
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js?_=1494915018407
+HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/lbReport/default/index?tab=payment_report
+---

@@ -350,7 +350,6 @@ class UserList extends CActiveRecord
             }
         }
         public function getTermName($list_code,$list_id){
-            echo $list_id;
             $criteria = new CDbCriteria();
             $criteria->compare('system_list_item_id', $list_id);
             $criteria->compare('system_list_code', $list_code);
