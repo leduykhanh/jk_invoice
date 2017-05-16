@@ -33,7 +33,7 @@ if (isset($_REQUEST['search_date_to']) && $_REQUEST['search_date_to'] != "")
             $file_name = explode('.', $file); 
             $file_name_arr = explode('_', $file_name[0]);
             if($file_name_arr[0] == $subcription && $file_name_arr[1] == $company) {
-                    $logo = "<img src='".$path.$file."' style='height:80' />";
+                    $logo = "<img src='".$path.$file."' style='height:100' />";
                  }
             }
             if(count($file_arr)>0)
@@ -78,12 +78,9 @@ if(isset($model->ownerAddress->lb_customer_address_line_1) || isset($model->owne
     $add = 'Address: ';
 //echo $html_logo;
 $a = '<table border="0" style="width:100%;margin-left:10px;" cellpadding="0" cellspacing="0">
-    <tr width="100%"><td  bgcolor="red" colspan="10">
-            <table width="100%" border="solid 1px" style="width:100%;" >
+
                 ' . $html_logo . '
-            </table>
-        </td>
-    </tr>
+
     <tr><td>
     <table border="0" style="width:98%;" cellpadding="0" cellspacing="0">
         <tr valign="top">
