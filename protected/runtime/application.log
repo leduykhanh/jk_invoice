@@ -12180,3 +12180,56 @@ Stack trace:
 REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js?_=1494915018407
 HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/lbReport/default/index?tab=payment_report
 ---
+2017/05/21 11:47:40 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in D:\xampp\htdocs\jk_invoice\protected\modules\lbCustomerAddress\controllers\DefaultController.php:245
+Stack trace:
+#0 D:\xampp\htdocs\jk_invoice\protected\modules\lbCustomerAddress\controllers\DefaultController.php(226): DefaultController->loadModel('0')
+#1 [internal function]: DefaultController->actionAddressLinesJSON('0')
+#2 D:\xampp\htdocs\jk_invoice\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#3 D:\xampp\htdocs\jk_invoice\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#4 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\jk_invoice\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\jk_invoice\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\jk_invoice\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\jk_invoice\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\jk_invoice\framework\web\CWebApplication.php(282): CController->run('addressLinesJSO...')
+#13 D:\xampp\htdocs\jk_invoice\framework\web\CWebApplication.php(141): CWebApplication->runController('lbCustomerAddre...')
+#14 D:\xampp\htdocs\jk_invoice\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\jk_invoice\index.php(43): CApplication->run()
+#16 {main}
+REQUEST_URI=/jk_invoice/index.php/1/lbCustomerAddress/addressLinesJSON?id=0
+HTTP_REFERER=http://localhost/jk_invoice/index.php/1/lbInvoice/8-Nancy
+---
+2017/05/21 19:22:34 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "1/lbInvoice". in D:\xampp\htdocs\jk_invoice\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\jk_invoice\framework\web\CWebApplication.php(141): CWebApplication->runController('1/lbInvoice')
+#1 D:\xampp\htdocs\jk_invoice\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\jk_invoice\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/jk_invoice/index.php/1/lbInvoice/
+---
+2017/05/21 19:40:01 [error] [php] Undefined offset: 0 (D:\xampp\htdocs\jk_invoice\protected\modules\lbQuotation\views\default\_form_pdf.php:128)
+Stack trace:
+#0 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(869): DefaultController->renderFile()
+#1 D:\xampp\htdocs\jk_invoice\protected\modules\lbQuotation\controllers\DefaultController.php(650): DefaultController->renderPartial()
+#2 unknown(0): DefaultController->actionPDFQuotation()
+#3 D:\xampp\htdocs\jk_invoice\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#4 D:\xampp\htdocs\jk_invoice\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\xampp\htdocs\jk_invoice\framework\web\filters\CFilterChain.php(133): DefaultController->runAction()
+#7 D:\xampp\htdocs\jk_invoice\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\xampp\htdocs\jk_invoice\framework\web\filters\CInlineFilter.php(58): DefaultController->filterAccessControl()
+#10 D:\xampp\htdocs\jk_invoice\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\xampp\htdocs\jk_invoice\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#13 D:\xampp\htdocs\jk_invoice\framework\web\CWebApplication.php(282): DefaultController->run()
+#14 D:\xampp\htdocs\jk_invoice\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\xampp\htdocs\jk_invoice\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\jk_invoice\index.php(43): CWebApplication->run()
+REQUEST_URI=/jk_invoice/index.php/1/lbQuotation/PDFQuotation?id=1&
+in D:\xampp\htdocs\jk_invoice\protected\modules\lbQuotation\views\default\_form_pdf.php (128)
+in D:\xampp\htdocs\jk_invoice\protected\modules\lbQuotation\controllers\DefaultController.php (650)
+in D:\xampp\htdocs\jk_invoice\index.php (43)
