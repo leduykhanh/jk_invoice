@@ -301,7 +301,7 @@ class LBApplication
 	 */
 	public static function workspaceLink($text, $url = '#', $htmlOptions = array())
 	{
-		$htmlOptions['data-workspace'] = '1';
+		$htmlOptions['data-workspace'] = '0';
 		
 		return CHtml::link(
 			$text,
