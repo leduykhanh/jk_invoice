@@ -71,9 +71,19 @@ foreach ($invoice_tax_arr as $invoice_tax_row) {
             }
            // if(count($file_arr)>0)
             //{
+            $logo = "<img src='".$path."a_a.png' style='height:100' />";
+                $biz = "<img src='".$path."BizSAFE 3.jpg' style='height:20' />";
             $html_logo = '
-            <tr>
-                <td colspan="2" align="center">'.$logo.'</td>
+            <tr width="100%" style="width:100%;" ><td colspan="2" align="left"><strong style="font-size:20px;">QE SAFETY CONSULTANCY PTE LTD</strong></td></tr>
+            <tr style="width:100%;" >
+                <td  align="left">1 Yishun Industrial Street 1 <br />                         
+                                #07-22 A Posh Bizhub       <br />                     
+                                Singapore 768160           <br />                 
+                                Tel:  (65) 66943200        <br />                 
+                                Email: Julius@qesafety.com  <br />                        
+                                UEN: 201422488N              <br />           
+                                </td>
+                <td  align="right">'.$logo.' <br /> '.$biz.'</td>
             </tr>
                 ';
             //}
