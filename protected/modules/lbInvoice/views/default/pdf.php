@@ -76,14 +76,14 @@ foreach ($invoice_tax_arr as $invoice_tax_row) {
             $html_logo = '
             <tr width="100%" style="width:100%;" ><td colspan="2" align="left"><strong style="font-size:20px;">QE SAFETY CONSULTANCY PTE LTD</strong></td></tr>
             <tr style="width:100%;" >
-                <td  align="left">1 Yishun Industrial Street 1 <br />                         
+                <td  style="border-bottom: 1px solid black;" align="left">1 Yishun Industrial Street 1 <br />                         
                                 #07-22 A Posh Bizhub       <br />                     
                                 Singapore 768160           <br />                 
                                 Tel:  (65) 66943200        <br />                 
                                 Email: Julius@qesafety.com  <br />                        
                                 UEN: 201422488N              <br />           
                                 </td>
-                <td  align="right">'.$logo.' <br /> '.$biz.'</td>
+                <td  style="border-bottom: 1px solid black;" align="right">'.$logo.' <br /> '.$biz.'</td>
             </tr>
                 ';
             //}
