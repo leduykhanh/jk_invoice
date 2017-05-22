@@ -118,6 +118,7 @@ if(isset($model->lb_quotation_subject))
                     <tr><td colspan="2">'.nl2br($model->lb_quotation_subject).'</td></tr>';
 }
 $term = UserList::model()->getTermName('term',$model->lb_quotation_term);
+$term_text = count($term)>0?'Term: '.$term[0]['system_list_item_name'].'<br>':'';
 $tbl= '<table border="0" style="margin:auto;width:100%;" cellpadding="0" cellspacing="0">
         '.$html_logo.'
         <tr valign="top">
@@ -125,7 +126,7 @@ $tbl= '<table border="0" style="margin:auto;width:100%;" cellpadding="0" cellspa
                 <span style="font-size:20px;font-weight:bold;">QUOTATION</span><br>
                 Quotation No: '.$model->lb_quotation_no.'<br>
                 Quotation Date: '.date('d-M-Y',  strtotime($model->lb_quotation_date)).'<br>
-                Term: '.$term[0]['system_list_item_name'].'<br>
+                '.$term_text.'
                 Due Date: '.date('d-M-Y',  strtotime($model->lb_quotation_due_date)).'<br>
             </td>
             <td width="400" align="right">
