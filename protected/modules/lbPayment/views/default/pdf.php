@@ -38,7 +38,8 @@ if (isset($_REQUEST['search_date_to']) && $_REQUEST['search_date_to'] != "")
             }
             if(count($file_arr)>0)
             {
-                $logo = "<img src='".$path.$file."' style='height:80' />";
+                $logo = "<img src='".$path."a_a.png' style='height:100' />";
+                $biz = "<img src='".$path."BizSAFE 3.jpg' style='height:20' />";
             $html_logo = '
             <tr width="100%" style="width:100%;" ><td colspan="2" align="left"><strong style="font-size:20px;">QE SAFETY CONSULTANCY PTE LTD</strong></td></tr>
             <tr style="width:100%;" >
@@ -49,7 +50,7 @@ if (isset($_REQUEST['search_date_to']) && $_REQUEST['search_date_to'] != "")
                                 Email: Julius@qesafety.com  <br />                        
                                 UEN: 201422488N              <br />           
                                 </td>
-                <td  align="right">'.$logo.'</td>
+                <td  align="right">'.$logo.' <br /> '.$biz.'</td>
             </tr>
                 ';
             }
