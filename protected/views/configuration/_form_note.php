@@ -2,37 +2,37 @@
     // Buttons
     echo '<div class="btn-toolbar">';
     LBApplicationUI::newButton('New Note', array(
-            'url'=>$this->createUrl('createTax'),
+            'url'=>$this->createUrl('createNote'),
     ));
     echo '</div>';
     
     $this->widget('bootstrap.widgets.TbGridView',array(
-        'id'=>'lb_tax_grid',
+        'id'=>'lb_note_grid',
         'template' => "{items}\n{pager}\n{summary}",
-        'dataProvider'=>$taxModel,
+        'dataProvider'=>$noteModel,
         'columns'=>array(
             array(
-                'name'      =>'lb_tax_name',
-                'header'    =>'Tax Name',
-                'value'     =>'$data->lb_tax_name',
+                'name'      =>'lb_note_name',
+                'header'    =>'Note Name',
+                'value'     =>'$data->lb_note_name',
             ),
             array(
-                'name'      =>'lb_tax_value',
+                'name'      =>'lb_note_value',
                 'header'    =>'Value',
-                'value'     =>'$data->lb_tax_value',
+                'value'     =>'$data->lb_note_value',
             ),
             array(
-                'name'      =>'lb_tax_is_default',
-                'header'    =>'Tax Default',
-                'value'     =>'$data->lb_tax_is_default',
+                'name'      =>'lb_note_is_default',
+                'header'    =>'Note Default',
+                'value'     =>'$data->lb_note_is_default',
             ),
 //            array(
 //                 'class' => 'editable.EditableColumn',
-//                    'header'    =>'Tax Default',
-//                    'name' => 'lb_tax_is_default',
+//                    'header'    =>'note Default',
+//                    'name' => 'lb_note_is_default',
 //                    'editable' => array(
 //                        'type' => 'select',
-//                        'url' => LbTax::model()->getActionURL('ajaxUpdateFieldTax'),
+//                        'url' => Lbnote::model()->getActionURL('ajaxUpdateFieldnote'),
 //                        'source'=>array(1=>1,2=>2),
 //                        'placement' => 'right',
 //                   )
@@ -42,12 +42,12 @@
                     'template'=>'{update}{delete}',
                     'buttons'=>array(
                        'delete'=>array(
-                           'url'=>'Yii::app()->createUrl("/configuration/deleteTax",array("id"=>$data->lb_record_primary_key))',
-                           'visible'=>'LbTax::model()->IsTaxExistInvoiceORQuotation($data->lb_record_primary_key)==false',
+                           'url'=>'Yii::app()->createUrl("/configuration/deletenote",array("id"=>$data->lb_record_primary_key))',
+                           'visible'=>'Lbnote::model()->IsnoteExistInvoiceORQuotation($data->lb_record_primary_key)==false',
                         ),
                        'update'=>array(
-                           'url'=>'Yii::app()->createUrl("/configuration/updateTax",array("id"=>$data->lb_record_primary_key))',
-                           'visible'=>'LbTax::model()->IsTaxExistInvoiceORQuotation($data->lb_record_primary_key)==false',
+                           'url'=>'Yii::app()->createUrl("/configuration/updatenote",array("id"=>$data->lb_record_primary_key))',
+                           'visible'=>'Lbnote::model()->IsnoteExistInvoiceORQuotation($data->lb_record_primary_key)==false',
                        )
                     ),
             ),

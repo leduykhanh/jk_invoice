@@ -36,6 +36,8 @@ class ConfigurationController extends Controller
                                         'deleteTax','UpdateList',
                                         'createTax',
                                         'updateTax',
+                                        'createNote',
+                                        'updateNote',
                                         'createDefaultNote',
                                         'ajaxLoadDefaultNote',
                                         'list_item',
@@ -60,6 +62,7 @@ class ConfigurationController extends Controller
 	public function actionIndex()
 	{
                 $taxModel = LbTax::model()->getTaxes();
+                $noteModel = LbNote::model()->getNotes();
                 
                 $list = UserList::model()->getList();
                 
@@ -72,6 +75,7 @@ class ConfigurationController extends Controller
                 
 		LBApplication::render($this,'index',array(
                     'taxModel'=>$taxModel,
+                    'noteModel'=>$noteModel,
                     'list'=>$list,
                     'translate'=>$translate,
                 ));
@@ -116,6 +120,39 @@ class ConfigurationController extends Controller
                 }
 
             LBApplication::render($this, '_form_new_tax', array(
+                'model'=>$model,
+                'error'=>'',
+            ));
+        }
+                
+
+        public function actionCreateNote()
+        {
+                $model = new LbNote();
+                
+                if (isset($_POST['LbNote']))
+                {
+                    $model->attributes=$_POST['LbNote'];
+                    
+                    $lbtax_arr = $_POST['LbNote'];
+                    if(!LbTax::model()->IsNameTax($lbtax_arr['lb_note_name']))
+                    {
+                            LBApplication::render($this, '_form_new_note', array(
+                                'model'=>$model,
+                                'error'=>'Note Name Exist',
+                            ));
+                    }
+                    else
+                    {
+                        $lbtax_arr = $_POST['LbNote'];
+                        if($model->save())
+                        {
+                           $this->redirect($this->createUrl('/'.LBApplication::getCurrentlySelectedSubscription().'/configuration'));
+                        }
+                    }
+                }
+
+            LBApplication::render($this, '_form_new_note', array(
                 'model'=>$model,
                 'error'=>'',
             ));
