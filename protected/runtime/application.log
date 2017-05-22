@@ -12180,3 +12180,48 @@ Stack trace:
 REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js?_=1494915018407
 HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/lbReport/default/index?tab=payment_report
 ---
+2017/05/16 08:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3fed79e7/js/jalali.js".' in D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/3fed79e7...')
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js
+HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/1/lbPayment/create?id=1&
+---
+2017/05/16 08:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3fed79e7/js/jalali.js".' in D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/3fed79e7...')
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js
+HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/1/lbPayment/create?id=1&
+---
+2017/05/16 08:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3fed79e7/js/jalali.js".' in D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/3fed79e7...')
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js
+HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/1/lbPayment/create?id=1&
+---
+2017/05/16 08:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3fed79e7/js/jalali.js".' in D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/3fed79e7...')
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js
+HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/1/lbPayment/create?id=1&
+---
+2017/05/16 08:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3fed79e7/js/jalali.js".' in D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/3fed79e7...')
+#1 D:\le\xampp\htdocs\linxbooks\linxbooks\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\le\xampp\htdocs\linxbooks\linxbooks\index.php(43): CApplication->run()
+#3 {main}
+REQUEST_URI=/linxbooks/linxbooks/assets/3fed79e7/js/jalali.js
+HTTP_REFERER=http://localhost/linxbooks/linxbooks/index.php/1/lbPayment/create?id=1&
+---
