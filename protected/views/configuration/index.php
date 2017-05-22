@@ -39,6 +39,11 @@
                                 array('id'=>'tab7','label'=>'<strong>'.Yii::t('lang','System').'</strong>',
                                                 'content'=> $this->renderPartial('permission.views.default.index', array(),true),
                                                 'active'=>false),
+                                array('id'=>'tab2','label'=>'<strong>'.Yii::t('lang','Notes').'</strong>', 
+                                                'content'=> $this->renderPartial('_form_note', array(
+                                                        'taxModel'=>$taxModel,
+                                                ),true),
+                                               ' active'=>false),
                                  
                                 
                             )
