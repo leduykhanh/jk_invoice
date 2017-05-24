@@ -24,7 +24,7 @@ if($error!="")
     echo '</div>';
 }
 echo $form->textFieldRow($model,'lb_note_name');
-echo $form->textFieldRow($model, 'lb_note_value');
+echo $form->textAreaRow($model, 'lb_note_value');
 echo $form->checkBoxRow($model,'lb_note_is_default');
 
     LBApplicationUI::submitButton('Save', array(
